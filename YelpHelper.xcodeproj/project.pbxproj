@@ -10,6 +10,13 @@
 		5E08481623BE778200B2934F /* YelpHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E08480C23BE778200B2934F /* YelpHelper.framework */; };
 		5E08481B23BE778200B2934F /* YelpHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08481A23BE778200B2934F /* YelpHelperTests.swift */; };
 		5E08481D23BE778200B2934F /* YelpHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E08480F23BE778200B2934F /* YelpHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E08482F23BE791F00B2934F /* SearchParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08482723BE791F00B2934F /* SearchParser.swift */; };
+		5E08483023BE791F00B2934F /* YelpURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08482823BE791F00B2934F /* YelpURLs.swift */; };
+		5E08483123BE791F00B2934F /* DetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08482923BE791F00B2934F /* DetailData.swift */; };
+		5E08483223BE791F00B2934F /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08482A23BE791F00B2934F /* NetworkController.swift */; };
+		5E08483323BE791F00B2934F /* DetailParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08482B23BE791F00B2934F /* DetailParser.swift */; };
+		5E08483423BE791F00B2934F /* YelpSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08482C23BE791F00B2934F /* YelpSearcher.swift */; };
+		5E08483523BE791F00B2934F /* SearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08482D23BE791F00B2934F /* SearchData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		5E08481523BE778200B2934F /* YelpHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E08481A23BE778200B2934F /* YelpHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpHelperTests.swift; sourceTree = "<group>"; };
 		5E08481C23BE778200B2934F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E08482723BE791F00B2934F /* SearchParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchParser.swift; sourceTree = "<group>"; };
+		5E08482823BE791F00B2934F /* YelpURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpURLs.swift; sourceTree = "<group>"; };
+		5E08482923BE791F00B2934F /* DetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailData.swift; sourceTree = "<group>"; };
+		5E08482A23BE791F00B2934F /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		5E08482B23BE791F00B2934F /* DetailParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailParser.swift; sourceTree = "<group>"; };
+		5E08482C23BE791F00B2934F /* YelpSearcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpSearcher.swift; sourceTree = "<group>"; };
+		5E08482D23BE791F00B2934F /* SearchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,13 @@
 			isa = PBXGroup;
 			children = (
 				5E08480F23BE778200B2934F /* YelpHelper.h */,
+				5E08482A23BE791F00B2934F /* NetworkController.swift */,
+				5E08482823BE791F00B2934F /* YelpURLs.swift */,
+				5E08482923BE791F00B2934F /* DetailData.swift */,
+				5E08482B23BE791F00B2934F /* DetailParser.swift */,
+				5E08482D23BE791F00B2934F /* SearchData.swift */,
+				5E08482723BE791F00B2934F /* SearchParser.swift */,
+				5E08482C23BE791F00B2934F /* YelpSearcher.swift */,
 				5E08481023BE778200B2934F /* Info.plist */,
 			);
 			path = YelpHelper;
@@ -148,6 +169,7 @@
 				TargetAttributes = {
 					5E08480B23BE778200B2934F = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					5E08481423BE778200B2934F = {
 						CreatedOnToolsVersion = 11.3;
@@ -195,6 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E08483223BE791F00B2934F /* NetworkController.swift in Sources */,
+				5E08483123BE791F00B2934F /* DetailData.swift in Sources */,
+				5E08482F23BE791F00B2934F /* SearchParser.swift in Sources */,
+				5E08483523BE791F00B2934F /* SearchData.swift in Sources */,
+				5E08483423BE791F00B2934F /* YelpSearcher.swift in Sources */,
+				5E08483023BE791F00B2934F /* YelpURLs.swift in Sources */,
+				5E08483323BE791F00B2934F /* DetailParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +369,7 @@
 		5E08482123BE778200B2934F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcgoldricksolutions.YelpHelper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +394,7 @@
 		5E08482223BE778200B2934F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +418,7 @@
 		5E08482423BE778200B2934F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = YelpHelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +436,7 @@
 		5E08482523BE778200B2934F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = YelpHelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
