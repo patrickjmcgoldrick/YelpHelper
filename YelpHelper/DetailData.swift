@@ -1,27 +1,27 @@
 //
 //  DetailData.swift
-//  WaffleHouseSearch
+//  YelpHelper
 //
-//  Created by dirtbag on 12/15/19.
-//  Copyright © 2019 dirtbag. All rights reserved.
+//  Created by dirtbag on 1/2/20.
+//  Copyright © 2020 dirtbag. All rights reserved.
 //
 
 import Foundation
 
-struct DetailData: Codable {
-    var name: String
-    var hours: [Hours]
+public struct DetailData: Codable {
+    public var name: String
+    public var hours: [Hours]
 }
 
-struct Hours: Codable {
-    var open: [Day]
-    var is_open_now: Bool
-    var hours_type: String
+public struct Hours: Codable {
+    public var open: [Day]
+    public var is_open_now: Bool
+    public var hours_type: String
 }
 
-struct Day: Codable {
-    var day: Int
-    var start: String
-    var end: String
-    var is_overnight: Bool
+public struct Day: Codable {
+    public var day: Int
+    public var start: String
+    public var end: String
+    public var is_overnight: Bool
 }

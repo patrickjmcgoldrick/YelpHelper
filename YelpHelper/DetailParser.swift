@@ -1,9 +1,9 @@
 //
 //  BusinessDetailParser.swift
-//  WaffleHouseSearch
+//  YelpHelper
 //
-//  Created by dirtbag on 12/15/19.
-//  Copyright © 2019 dirtbag. All rights reserved.
+//  Created by dirtbag on 1/2/20.
+//  Copyright © 2020 dirtbag. All rights reserved.
 //
 
 import Foundation

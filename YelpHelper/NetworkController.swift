@@ -1,16 +1,16 @@
 //
 //  NetworkController.swift
-//  WaffleHouseSearch
+//  YelpHelper
 //
-//  Created by dirtbag on 12/9/19.
-//  Copyright © 2019 dirtbag. All rights reserved.
+//  Created by dirtbag on 1/2/20.
+//  Copyright © 2020 dirtbag. All rights reserved.
 //
 
 import Foundation
 
 class NetworkController {
 
-    func loadData(apiKey: String, url: URL, completed: @escaping (Data) -> Void) {
+    public func loadYelpData(apiKey: String, url: URL, completed: @escaping (Data) -> Void) {
 
         var urlRequest = URLRequest(url: url)
         urlRequest.setValue(apiKey, forHTTPHeaderField: "Authorization")

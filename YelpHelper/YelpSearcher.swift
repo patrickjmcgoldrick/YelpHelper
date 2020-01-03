@@ -1,27 +1,27 @@
 //
 //  YelpSearcher.swift
-//  WaffleHouseSearch
+//  YelpHelper
 //
-//  Created by dirtbag on 12/13/19.
-//  Copyright © 2019 dirtbag. All rights reserved.
+//  Created by dirtbag on 1/2/20.
+//  Copyright © 2020 dirtbag. All rights reserved.
 //
 
 import Foundation
 
-class YelpSearcher {
+public class YelpSearcher {
 
     var yelpAPIKey: String
     
-    init(apiKey: String) {
+    public init(apiKey: String) {
         yelpAPIKey = apiKey
     }
     
     /// Call Yelp API to the points of interest for the Map
-    func readPointsFromYelp(url: URL, found: @escaping ((SearchData) -> Void)) {
+    public func readPointsFromYelp(url: URL, found: @escaping ((SearchData) -> Void)) {
 
         let network = NetworkController()
 
-        network.loadData(apiKey: yelpAPIKey, url: url) { (data) in
+        network.loadYelpData(apiKey: yelpAPIKey, url: url) { (data) in
 
             let parser = SearchParser()
 
@@ -33,18 +33,17 @@ class YelpSearcher {
     }
 
     /// Create URL with search term and location
-    func createURL(searchTerm: String, location: String) -> URL? {
+    public func createURL(searchTerm: String, location: String) -> URL? {
 
         let paramString = YelpURLs.searchParamTerm + searchTerm
             + YelpURLs.searchParamLocation + location
 
         return encodeURL(paramString: paramString)
-
     }
 
     /// Create URL with search term and position (lat,long)
     /// Note: Don't encode the ''?' or the URL will be invalid
-    func createURL(searchTerm: String, latitude: Double, longitude: Double) -> URL? {
+    public func createURL(searchTerm: String, latitude: Double, longitude: Double) -> URL? {
 
         // url encoding
         let paramString = YelpURLs.searchParamTerm + searchTerm
@@ -66,7 +65,7 @@ class YelpSearcher {
     }
 
     /// Call Yelp API with business {id] to get business Details
-    func readDetails(id: String, read: @escaping ((DetailData) -> Void)) {
+    public func readDetails(id: String, read: @escaping ((DetailData) -> Void)) {
 
         let urlString = YelpURLs.businessDetailEndpoint + id
 
@@ -74,7 +73,7 @@ class YelpSearcher {
 
         let network = NetworkController()
 
-        network.loadData(apiKey: yelpAPIKey, url: url) { (data) in
+        network.loadYelpData(apiKey: yelpAPIKey, url: url) { (data) in
 
             let parser = DetailParser()
 
@@ -84,5 +83,4 @@ class YelpSearcher {
             }
         }
     }
-
 }

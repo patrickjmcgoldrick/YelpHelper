@@ -17,15 +17,15 @@ Pod::Spec.new do |spec|
 
   spec.name         = "YelpHelper"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of YelpHelper."
+  spec.summary      = "Helper functions to simplify interfacing with the Yelp API"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "library of helper functions for dealing with the YelpAPI" 
-  spec.homepage     = "http://EXAMPLE/YelpHelper"
+  spec.description  = "Library of helper functions for dealing with the YelpAPI. Simplifies use of API with simple functions that load the data into structs and make them available to the calling App." 
+  spec.homepage     = "http://mcgoldricksolutions.com/YelpHelper"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -62,12 +62,12 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  spec.platform     = :ios, "12.4"
+  spec.platform     = :ios, "12.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
   # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
+  spec.watchos.deployment_target = "3.0"
   # spec.tvos.deployment_target = "9.0"
 
 
@@ -77,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/patrickjmcgoldrick/YelpHelper.git" }
+  spec.source       = { :git => "https://github.com/patrickjmcgoldrick/YelpHelper.git", :tag => "#{spec.version}" }
   #spec.source       = { :git => "https://github.com/patrickjmcgoldrick/YelpHelper.git", :tag => "#{spec.version}" }
 
 
