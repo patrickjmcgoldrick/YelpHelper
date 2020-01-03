@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "Library of helper functions for dealing with the YelpAPI. Simplifies use of API with simple functions that load the data into structs and make them available to the calling App." 
-  spec.homepage     = "http://mcgoldricksolutions.com/YelpHelper"
+  spec.homepage     = "https://github.com/patrickjmcgoldrick/YelpHelper"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -36,8 +36,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  #spec.license      = "MIT"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -60,6 +60,7 @@ Pod::Spec.new do |spec|
   #  If this Pod runs only on iOS or OS X, then specify the platform and
   #  the deployment target. You can optionally include the target after the platform.
   #
+  spec.swift_version = '4.0'
 
   # spec.platform     = :ios
   spec.platform     = :ios, "12.0"
