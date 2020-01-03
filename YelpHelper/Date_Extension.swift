@@ -6,8 +6,17 @@
 //  Copyright © 2020 dirtbag. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class Date_Extension: WKInterfaceController {
+public extension Date {
 
+    func getWeekday() -> Int {
+        let myCalendar = Calendar(identifier: .gregorian)
+        let weekDay = myCalendar.component(.weekday, from: self)
+        return weekDay
+    }
+
+    func getYelpWeekday() -> Int {
+        return (getWeekday() + 5) % 7
+    }
 }

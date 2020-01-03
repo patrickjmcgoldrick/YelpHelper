@@ -22,7 +22,8 @@ class DetailParser {
             parsed(detailData)
 
         } catch {
-            print("Error Parsing SearchData from JSON: \(error.localizedDescription)")
+            print("Error Parsing DetailData from JSON: \(error.localizedDescription)")
+            print(String(data: data, encoding: .utf8))
         }
 
     }

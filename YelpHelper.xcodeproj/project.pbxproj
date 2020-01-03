@@ -17,6 +17,7 @@
 		5E08483323BE791F00B2934F /* DetailParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08482B23BE791F00B2934F /* DetailParser.swift */; };
 		5E08483423BE791F00B2934F /* YelpSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08482C23BE791F00B2934F /* YelpSearcher.swift */; };
 		5E08483523BE791F00B2934F /* SearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08482D23BE791F00B2934F /* SearchData.swift */; };
+		5EB7A5E123BF5DCE00AEDFCF /* Date_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB7A5E023BF5DCE00AEDFCF /* Date_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		5E08482B23BE791F00B2934F /* DetailParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailParser.swift; sourceTree = "<group>"; };
 		5E08482C23BE791F00B2934F /* YelpSearcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpSearcher.swift; sourceTree = "<group>"; };
 		5E08482D23BE791F00B2934F /* SearchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchData.swift; sourceTree = "<group>"; };
+		5EB7A5E023BF5DCE00AEDFCF /* Date_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				5E08482D23BE791F00B2934F /* SearchData.swift */,
 				5E08482723BE791F00B2934F /* SearchParser.swift */,
 				5E08482C23BE791F00B2934F /* YelpSearcher.swift */,
+				5EB7A5E023BF5DCE00AEDFCF /* Date_Extension.swift */,
 				5E08481023BE778200B2934F /* Info.plist */,
 			);
 			path = YelpHelper;
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E08483223BE791F00B2934F /* NetworkController.swift in Sources */,
+				5EB7A5E123BF5DCE00AEDFCF /* Date_Extension.swift in Sources */,
 				5E08483123BE791F00B2934F /* DetailData.swift in Sources */,
 				5E08482F23BE791F00B2934F /* SearchParser.swift in Sources */,
 				5E08483523BE791F00B2934F /* SearchData.swift in Sources */,
